@@ -44,14 +44,16 @@ console.log(returnIsTooShort(pass));
 // 5. Write a function called returnIsBreakingLaw that will return true if the age parameter is < 21 AND drink parameter is "alcohol"
 const returnIsBreakingLaw = (age, drink) => {
     if (age < 21 && drink === "alcohol") {
-        return true
+        // return true
+        console.log(true);
     }
     else {
-        return false
+        // return false
+        console.log(false);
     }
 };
-console.log(returnIsBreakingLaw(22, "alcohol"));
-console.log(returnIsBreakingLaw(19, "alcohol"));
+returnIsBreakingLaw(22, "alcohol");
+returnIsBreakingLaw(19, "alcohol");
 
 
 // 6. Make a variable called count
@@ -60,23 +62,26 @@ console.log(returnIsBreakingLaw(19, "alcohol"));
 let count = 3
 const addToCount = (number) => {
     total = count + number
-    return total
+    // 
+    console.log(total);
 }
-console.log(addToCount(2));
-console.log(addToCount(12));
-console.log(addToCount(170));
-console.log(addToCount(59));
+addToCount(2);
+addToCount(12);
+addToCount(170);
+addToCount(59);
 
 // 7. Write a function called returnIsChase that will return true if the name parameter is "Chase" - Make case insensitive "Chase" "CHASE" "CHasE" all return true
 const returnIsChase = (name) => {
-    if (name.toLowerCase() === "simo") {
-        return true
+    if (name.toLowerCase() === "chase") {
+        // return true
+        console.log(true);
     }
     else {
-        return false
+        // return false
+        console.log(false);
     }
 }
-console.log(returnIsChase('SImo'));
+returnIsChase('SImo');
 
 // 8. Make a variable called class that is an array ["Sally", "Sam", "Frodo", "Gandalf", "Eragorn", "Gimley"]
 
@@ -87,38 +92,43 @@ console.log(classArray);
 
 const returnClassIsTooSmall = (students) => {
     if (students < 10) {
-        return true
+        // return true
+        console.log(true);
     }
     else {
-        return false
+        // return false
+        console.log(false);
     }
 }
-console.log(returnClassIsTooSmall(7));
-console.log(returnClassIsTooSmall(27));
+returnClassIsTooSmall(7);
+returnClassIsTooSmall(27);
 
 // 9. Make a variable called combineStrings that will take stringOne parameter and stringTwo parameter and return them combined. call this function 3 times with 6 strings.
 
 const combineStrings = (stringOne, stringTwo) => {
-    return stringOne + stringTwo
+    // return stringOne + stringTwo
+    console.log(stringOne + stringTwo);
 }
-console.log(combineStrings("If ", "true"));
-console.log(combineStrings("PineApple ", "express"));
-console.log(combineStrings("look ", "up"));
+combineStrings("If ", "true");
+combineStrings("PineApple ", "express");
+combineStrings("look ", "up");
 
 
 // 10. Write a function called returnDataType that will return the datatype of the data parameter
 const returnDataType = (data) => {
-    return typeof data
+    // return typeof data
+    console.log(typeof data);
 }
-console.log(returnDataType(2));
-console.log(returnDataType("oh"));
-console.log(returnDataType());
+returnDataType(2);
+returnDataType("oh");
+returnDataType();
 
 // 11. Write a function called addStudentToClass that will push the student parameter to the class array from problem number 8
 // Call this function 2 times
 
 const addStudentToClass = (student) => {
     classArray.push(student);
+    // return classArray
     console.log(classArray);
 }
 addStudentToClass("Simo");
